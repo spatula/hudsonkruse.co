@@ -112,6 +112,10 @@ $fg-breakpoints: (
       @extend %col;
     }
   }
+
+  .col-#{$namespace}-#{$fg-columns} {
+    padding-right: 0;
+  }
 }
 
 @mixin grid-sizes( $namespace ) {
