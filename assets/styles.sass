@@ -1,0 +1,66 @@
+---
+# Jekyll requires front matter to process as sass
+---
+
+@import "fonts"
+@import "flex-grid"
+
+.sr-only
+  display: none
+
+.svg--welcoming
+  font-family: "Alegreya"
+  font-size: 36px
+
+html
+  font-size: 24px
+  margin: 0
+  padding: 0
+
+body
+  background: url("/assets/paper.png")
+  background-size: 512px
+  font-family: "Avenir", "Segoe UI", sans-serif
+  font-size: 1rem
+  margin: 0
+  padding: 0
+
+article.welcome-hudson
+  text-align: center
+
+  h1.kruse
+    background: url("welcoming.svg")
+    background-size: 3ex
+    background-repeat: no-repeat
+    background-position: top center
+    font-size: 5rem
+    font-family: "Oswald", sans-serif
+    line-height: 0.8
+    margin-bottom: 0
+    padding-top: 80px
+    position: relative
+    text-transform: uppercase
+
+  section.details
+    color: rgba(0,0,0,0.8)
+    font-family: "Alegreya SC", serif
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-style: normal
+
+    hr
+      border: 2px solid rgba(0,0,0,0.3)
+      border-left: 0
+      border-right: 0
+      height: 0.5em
+      width: 30%
+
+.grid-image
+  background-size: cover
+  height: 100%
+  width: 100%
+
+  &.hudson-closeup
+    background-image: url("/assets/hudson-closeup.jpg")
+    background-position: center center
+
