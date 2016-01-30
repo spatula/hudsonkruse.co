@@ -1,8 +1,19 @@
 ---
 # Jekyll requires front matter to process as sass
 ---
-@import "fonts"
 @import "flex-grid"
+
+@font-face
+  font-family: 'Montserrat'
+  src: url('/assets/montserrat-bold.woff2?version={{ site.asset_version }}') format('woff2'), url('/assets/montserrat-bold.woff?version={{ site.asset_version }}') format('woff')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Alegreya SC'
+  src: url('/assets/alegreyasc-regular.woff2?version={{ site.asset_version }}') format('woff2'), url('/assets/alegreyasc-regular.woff?version={{ site.asset_version }}') format('woff')
+  font-weight: normal
+  font-style: normal
 
 .sr-only
   display: none
@@ -31,7 +42,7 @@ article.welcome-hudson
   text-align: center
 
 div.welcoming-banner
-  background: url("welcoming.svg")
+  background: url("/assets/welcoming.svg?version={{ site.asset_version }}")
   background-size: 10rem
   background-repeat: no-repeat
   background-position: top center
@@ -39,7 +50,7 @@ div.welcoming-banner
   margin-top: 80px
 
   @media screen and (max-width: 992px)
-    margin-top: 0.25em
+    margin-top: 1rem
 
 h1.kruse
   font-size: 4rem
