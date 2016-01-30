@@ -1,7 +1,6 @@
 ---
 # Jekyll requires front matter to process as sass
 ---
-
 @import "fonts"
 @import "flex-grid"
 
@@ -40,6 +39,9 @@ article.welcome-hudson
     padding-top: 80px
     position: relative
     text-transform: uppercase
+
+    @media screen and (max-width: 992px)
+      margin-top: 0.25em
 
   section.details
     color: rgba(0,0,0,0.8)
